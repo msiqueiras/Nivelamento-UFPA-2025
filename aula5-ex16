@@ -1,0 +1,12 @@
+#DADA UMA LISTA DE NÚMEROS. CRIE E EXIBA A LISTA SEM NÚMEROS REPETIDOS.
+lista = []
+lista_sem_rep = []
+continuar = 1
+while continuar == 1:
+    lista.append(int(input('Digite um número inteiro:')))
+    continuar = int(input('Digite 1 para continuar adicionando números à lista:'))
+print('Lista:', lista)
+for num in lista:
+    if num not in lista_sem_rep:
+        lista_sem_rep.append(num)
+print('Lista sem repetições:', lista_sem_rep)
