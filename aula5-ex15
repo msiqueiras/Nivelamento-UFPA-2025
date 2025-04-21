@@ -16,4 +16,7 @@ for num in lista:
                 primos.append(num)
                 tamanho_primos += 1
 print('Lista:', lista)
-print('Lista de primos:', primos)
+if tamanho_primos > 0:
+    print('Lista de primos:', primos)
+else:
+    print('Não há números primos na lista')
