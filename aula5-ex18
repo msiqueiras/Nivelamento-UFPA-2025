@@ -1,0 +1,24 @@
+#CRIE UM PROGRAMA QUE RECEBA DUAS LISTAS DISTINTAS E RETORNE UMA LISTA COM OS ELEMENTOS EM COMUM DAS LISTAS.
+lista1 = []
+lista2 = []
+listacomum = []
+continuar = 1
+print('Crie a lista 1:')
+while continuar == 1:
+    lista1.append(int(input('Digite um número inteiro:')))
+    continuar = int(input('Digite 1 para continuar adicionando números à lista 1:'))
+    if continuar != 1:
+        print('Criação da lista 1 concluída')
+continuar = 1
+print('Crie a lista 2:')
+while continuar == 1:
+    lista2.append(int(input('Digite um número inteiro:')))
+    continuar = int(input('Digite 1 para continuar adicionando números à lista 2:'))
+    if continuar != 1:
+        print('Criação da lista 2 concluída')
+for num in lista1:
+    if num in lista2:
+        listacomum.append(num)
+print('Lista 1:', lista1)
+print('Lista 2:', lista2)
+print('Lista de elementos em comum:', listacomum)
