@@ -1,0 +1,11 @@
+# DADO DOIS VETORES REPRESENTADOS POR DUAS LISTAS COM 3 ELEMENTOS, CALCULE E EXIBA O PRODUTO ESCALAR DESSES VETORES.
+vetor_v = []
+vetor_w = []
+print('---VETOR V---')
+for x in range(1, 4):
+    vetor_v.append(float(input(f'Digite o {x}º número:')))
+print('---VETOR W---')
+for x in range(1, 4):
+    vetor_w.append(float(input(f'Digite o {x}º número:')))
+produto_escalar = (vetor_v[0]*vetor_w[0]) + (vetor_v[1]*vetor_w[1]) + (vetor_v[2]*vetor_w[2])
+print(f'v . w = {produto_escalar}')
