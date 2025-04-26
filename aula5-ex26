@@ -1,0 +1,33 @@
+DADA UMA LISTA DE NÚMEROS, CALCULE E EXIBA A PROBABILIDADE DE SORTEAR ALEATORIAMENTE: UM NÚMERO PAR, UM NÚMERO ÍMPAR E UM NÚMERO PRIMO.
+lista_principal = []
+tamanho_principal = 0
+pares = []
+tamanho_pares = 0
+impares = []
+tamanho_impares = 0
+primos = []
+tamanho_primos = 0
+continuar =  1
+while continuar == 1:
+    lista_principal.append(int(input('Digite um número inteiro:')))
+    tamanho_principal += 1
+    continuar = int(input('Digite 1 para continuar:'))
+for num in lista_principal:
+    if num >= 2:
+        qnt_divisores = 0
+        for div in range(1, num+1):
+            if num % div == 0:
+                qnt_divisores += 1
+                if qnt_divisores == 2:
+                    primos.append(num)
+                    tamanho_primos += 1
+for num in lista_principal:
+    if num % 2 == 0:
+        pares.append(num)
+        tamanho_pares += 1
+    else:
+        impares.append(num)
+        tamanho_impares += 1
+print(f'Probabilidade de sortear um número par: {(tamanho_pares/tamanho_principal):.2f}')
+print(f'Probabilidade de sortear um número ímpar: {(tamanho_impares/tamanho_principal):.2f}')
+print(f'Probabilidade de sortear um número primo: {(tamanho_primos/tamanho_principal):.2f}')
