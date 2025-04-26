@@ -1,0 +1,15 @@
+# DADA UMA LISTA DE NOMES, CRIE E EXIBA UMA NOVA LISTA COM O TAMANHO DE CADA NOME.
+lista_nomes = []
+lista_tamanhos = []
+continuar = 1
+while continuar == 1:
+    lista_nomes.append(str(input('Digite um nome:')))
+    continuar = int(input('Digite 1 para continuar:'))
+print('Encerrando a contagem de nomes...')
+for nome in lista_nomes:
+    tamanho_nome = 0 #Variável declarada dentro de looping para sempre ser reiniciada na contagem 
+    for tam in nome:
+        tamanho_nome += 1
+    lista_tamanhos.append(tamanho_nome)
+print('Lista de nomes:', lista_nomes)
+print('Lista do tamanho dos nomes:', lista_tamanhos)
