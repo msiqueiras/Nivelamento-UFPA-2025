@@ -1,0 +1,19 @@
+# DADA UMA LISTA DE LETRAS DESORDENADAS, RETORNE A LISTA EM ORDEM ALFABÉTICA.
+alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+lista_letras = []
+lista_ordenada = []
+continuar = 1 
+while continuar == 1:
+    letra = str(input(('Digite uma letra:'))).strip().lower()
+    if letra not in lista_letras and letra in alfabeto:
+        lista_letras.append(letra)
+    else:
+        print('Letra inválida ou já digitada.')
+    continuar = int(input('Digite 1 para continuar:'))
+for contador_de_indice in range(0, 26):
+    for letra in lista_letras:
+        if letra == alfabeto[contador_de_indice]:
+            lista_ordenada.append(alfabeto[contador_de_indice])
+print('Lista desordenada:', lista_letras)
+print('Lista em ordem alfabética:', lista_ordenada)
