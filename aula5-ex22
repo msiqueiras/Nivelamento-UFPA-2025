@@ -1,0 +1,16 @@
+# PEÇA AO USUÁRIO, A PARTIR DE DADOS 
+# DE ENTRADA, ITENS PARA UMA LISTA DECOMPRAS E OS ADICIONE EM UMA LISTA CHAMADA “COMPRAS”. USANDO UM LOOP, MOSTRE AO USUÁRIO TODOS OS ITENS. O CRITÉRIO DE PARADA É ESCOLHA DO PROGRAMADOR.
+compras = []
+continuar = 1
+pos = 0
+while continuar == 1:
+    item = str(input('Digite um item de compra:')).strip().title()
+    if item not in compras:
+        compras.append(item)
+    else:
+        print('Item já adicionado na lista.')
+    continuar = int(input('Digite 1 para continuar:'))
+print('---LISTA DE COMPRAS---')
+for compra in compras:
+    pos += 1
+    print(pos,'-',compra)    
