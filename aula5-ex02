@@ -1,0 +1,18 @@
+#DADA UMA LISTA DE NÚMEROS, ENCONTRE O MAIOR E O MENOR VALOR PRESENTE NA LISTA. SEM USAR FUNÇÕES PRONTAS DO PYTHON!
+lista = []
+continuar = 1
+while continuar == 1:
+    lista.append(float(input('Digite um número:')))
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+num_max = num_min = 0
+for num in lista:
+    if num == lista[0]:
+        num_max = num_min = num #Se o número digitado for o 1º da lista, automaticamente, ele é o maior e o menor número da comparação
+    else:
+        if num > num_max:
+            num_max = num
+        if num < num_min:
+            num_min = num
+print(f'A lista digitada é: {lista}')
+print(f'O maior número dessa lista é o {num_max}')
+print(f'O menor número dessa lista é {num_min}')
