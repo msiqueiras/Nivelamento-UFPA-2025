@@ -1,0 +1,12 @@
+#ESCREVA UM PROGRAMA QUE RECEBA UMA LISTA DE NÚMEROS E RETORNE A SOMA DE TODOS OS ELEMENTOS. SEM USAR FUNÇÕES PRONTAS DO PYTHON!
+lista_num = []
+soma_num = 0
+continuar = 1
+while continuar == 1:
+    num_ind = float(input('Digite um número:'))
+    lista_num.append(num_ind)
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+for x in lista_num:
+    soma_num += x
+print(f'A lista de números é: {lista_num}')
+print(f'A soma dos números da lista é: {soma_num}')
