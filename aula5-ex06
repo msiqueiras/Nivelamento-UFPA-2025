@@ -1,0 +1,13 @@
+#DADA UMA LISTA DE ELEMENTOS, CALCULE E EXIBA A QUANTIDADE DE ELEMENTOS PRESENTES NESSA LISTA.
+lista = []
+continuar = 1
+tamanho_lista = 0
+while continuar == 1:
+    lista.append(float(input('Digite um número:')))
+    tamanho_lista += 1
+    continuar = int(input('Digite 1 para continuar a adicionar números:'))
+#Outra forma de resolver seria usando um laço for para percorrer os elementos da lista e somar + 1 a cada elemento percorrido.
+#for elemento in lista:
+#  tamanho_lista += 1  
+print(f'Lista: {lista}')
+print(f'Tamanho da lista: {tamanho_lista}')
