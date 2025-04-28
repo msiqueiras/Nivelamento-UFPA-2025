@@ -1,0 +1,16 @@
+#DADA UMA LISTA E UM NÚMERO ESPECÍFICO, CONTE QUANTAS VEZES ESSE NÚMERO APARECE NA LISTA. SEM USAR FUNÇÕES PRONTAS DO PYTHON!
+lista = []
+continuar = 1
+while continuar == 1:
+    lista.append(int(float('Digite um número:')))
+    continuar = int(input('Digite 1 para adicionar mais um número:'))
+print(f'Dada a lista: {lista}')
+num_esc = float(input('Qual número para saber quantas vezes apareceu:'))
+qnt = 0
+for n in lista:
+    if n == num_esc:
+        qnt += 1
+if qnt >= 1:
+    print(f'A quantidade de vezes que o número {num_esc} apareceu na lista é: {qnt}')
+else:
+    print(f'O número {num_esc} não aparece na lista')
