@@ -1,0 +1,16 @@
+#SABENDO QUE O CICLO DOS ANIMAIS NO ZODÍACO CHINÊS É: RATO -> BOI -> TIGRE ->
+#COELHO -> DRAGÃO -> SERPENTE -> CAVALO -> CABRA -> MACACO -> GALO -> CÃO -> PORCO 
+#E QUE 2025 É O ANO DA SERPENTE. FAÇA UM PROGRAMA QUE RECEBA UM ANO E EXIBA O ANIMAL DO ZODÍACO CHINÊS DESSE ANO.
+zodiaco_chines = ['rato', 'boi', 'tigre', 'coelho', 'dragão', 'serpente', 'cavalo',
+                  'cabra', 'macaco', 'galo', 'cão', 'porco']
+print('----ZODÍACO CHINÊS----')
+continuar = 1
+while continuar == 1:
+    ano_analisado = int(input('Digite um ano:'))
+    resto = (ano_analisado - 2020) % 12 #2020 foi ano do RATO, índice 0
+    if resto < 0: #Condicional de negativo ou positivo para não dar erro de index out of range
+        print(f'O animal do ano de {ano_analisado} é o {zodiaco_chines[0-(-resto)]}.')
+    else:
+        print(f'O animal do ano de {ano_analisado} é o {zodiaco_chines[0+resto]}.')
+    continuar = int(input('Digite 1 caso queira ver o zodíaco de outro ano:'))
+print('Encerrando programa...')
