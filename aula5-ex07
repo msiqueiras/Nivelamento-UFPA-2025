@@ -1,0 +1,11 @@
+#DADA UMA LISTA DE NÚMEROS, PREENCHIDA PELO USUÁRIO, RETORNE UMA NOVA LISTA CONTENDO CADA NÚMERO ELEVADO AO QUADRADO.
+lista = []
+continuar = 1
+while continuar == 1:
+    lista.append(float(input('Digite um número:')))
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+lista_ao_quadrado = []
+for n in lista:
+    lista_ao_quadrado.append(n**2)
+print('Lista:', lista)
+print('Lista ao quadrado:', lista_ao_quadrado)
