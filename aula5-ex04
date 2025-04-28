@@ -1,0 +1,12 @@
+#FAÇA UM PROGRAMA QUE RECEBA UMA LISTA DE N ELEMENTOS E CALCULE E EXIBA A MÉDIA DOS ELEMENTOS DA LISTA.
+lista = []
+continuar = 1
+contador = sum_num = 0
+while continuar == 1:
+    lista.append(float(input('Digite um número:')))
+    contador += 1
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+for n in lista:
+    sum_num += n
+print(f'A lista digitada é: {lista}')
+print(f'A média dos números dessa lista é {sum_num/contador}')
