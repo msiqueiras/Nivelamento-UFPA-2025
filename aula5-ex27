@@ -1,0 +1,25 @@
+#DADA UMA LISTA DE NÚMEROS, EXIBA SE A LISTA ESTÁ EM ORDEM CRESCENTE, DECRESCENTE OU DESORDENADA.
+lista_num = []
+continuar = 1
+tamanho_lista = 0
+while continuar == 1:
+    lista_num.append(float(input('Digite um número:')))
+    tamanho_lista += 1
+    continuar = int(input('Digite 1 para adicionar outro número:'))
+print(lista_num)
+qnt_false = 0
+qnt_true = 0
+for ind in range(1, tamanho_lista):
+    e_maior = True
+    if lista_num[0] <= lista_num[ind]:
+        e_maior = False
+        qnt_false += 1
+    if lista_num[0] >= lista_num[ind]:
+        e_maior = True
+        qnt_true += 1
+if qnt_false == (tamanho_lista-1):
+    print('A lista está em ordem crescente.')
+if qnt_true == (tamanho_lista-1):
+    print('A lista está em ordem decrescente.')
+else:
+    print('A lista está desordenada.')
