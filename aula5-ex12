@@ -1,0 +1,16 @@
+#DADA UMA LISTA DE NÚMEROS, VERIFIQUE E EXIBA A QUANTIDADE DE NÚMEROS NEGATIVOS.
+lista = []
+continuar = 1
+qnt_negativo = 0
+while continuar == 1:
+    num = int(input('Digite um número inteiro:'))
+    num.append(num)
+    if num < 0:
+        qnt_negativo += 1
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+print('Encerrando contagem...')
+print('Lista:', lista)
+if qnt_negativo > 0:
+    print(f'Há {qnt_negativo} números negativos na lista')
+else:
+    print('Não há números negativos na lista.')
