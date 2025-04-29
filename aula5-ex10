@@ -1,0 +1,14 @@
+#DADA UMA LISTA DE STRINGS, PEÇA AO USUÁRIO UMA STRING, VERIFIQUE E EXIBA SE ESSA STRING ESTÁ PRESENTE NA LISTA.
+lista_strings = ['bolo', 'tangente', 'ornitorrinco', 'médico', 'saturno',
+                 'roberto', 'helicóptero', 'fruta do conde', 'vodka',
+                 'inteligência artificial', 'ford ka', 'gabriela', 'computação',
+                'ufpa']
+continuar = 1
+while continuar == 1:
+    string = str(input('Advinhe uma string que está contida na lista:')).strip().lower()
+    if string in lista_strings:
+        print(f'Parabéns, a palavra {string} está na lista')
+    else:
+        print(f'Errado! A palavra {string} não está na lista')
+    continuar = int(input('Digite 1 para continuar advinhando:'))
+print('Encerrando programa.')
