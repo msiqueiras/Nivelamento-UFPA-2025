@@ -1,0 +1,16 @@
+#DADA UMA LISTA DE NÚMEROS, CRIE E EXIBA UMA LISTA COM OS NÚMEROS PARES E OUTRA COM OS NÚMEROS ÍMPARES.
+principal = []
+pares = []
+impares = []
+continuar = 1
+while continuar == 1:
+    principal.append(int(input('Digite um número principal:')))
+    continuar = int(input('Digite 1 para adicionar mais números:'))
+for num in principal:
+    if num % 2 == 0:
+        pares.append(num)
+    else:
+        impares.append(num)
+print('Lista principal:', principal)
+print('Lista dos pares:', pares)
+print('Lista dos ímpares:', impares)
