@@ -1,0 +1,12 @@
+#PEÇA QUE O USUÁRIO DIGITE UM NÚMERODE 1 A 12 E MOSTRE O MÊS CORRESPONDENTE, SEM UTILIZAR ESTRUTURAS CONDICIONAIS.
+meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+         'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+continuar = 1
+while continuar == 1:
+    mes_analisado = int(input('Digite o número do mês:'))
+    if mes_analisado > 12 or mes_analisado < 1:
+        print(f'Não existe mês correspondente ao número {mes_analisado}.')
+    else:
+        print(f'O mês {mes_analisado} corresponde a {meses[mes_analisado-1]}')
+    continuar = int(input('Digite 1 para continuar:'))
+print('Encerrando programa.')
