@@ -1,0 +1,17 @@
+lista = []
+tamanho_lista = 0
+continuar = 1
+while continuar == 1:
+    lista.append(int(input('Digite um número inteiro:')))
+    tamanho_lista += 1
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+print('Encerrando contagem...')
+for i in range(0, tamanho_lista-1): #método bubble sort para organizar em ordem crescente uma lista
+    for j in range(0, tamanho_lista - i - 1):
+        if lista[j] > lista[j+1]:
+            lista[j], lista[j+1] = lista[j+1], lista[j]
+print(lista)
+if tamanho_lista % 2 != 0: #caso a lista seja ímpar, o termo central é a mediana
+     print(f'A mediana da lista é {lista[int(tamanho_lista/2)]}')
+else:
+     print(f'A mediana da lista é {(lista[int(tamanho_lista/2)] + lista[int(tamanho_lista/2 - 1)])/2}') #caso a lista seja par, a média dos 2 elementos centrais é a mediana
