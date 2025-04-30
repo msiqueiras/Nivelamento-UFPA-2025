@@ -1,0 +1,12 @@
+#PEÇA AO USUÁRIO PARA INSERIR UM NÚMERO E VERIFIQUE SE ELE EXISTE NA LISTA. IMPRIMA UMA MENSAGEM INFORMANDO SE O NÚMERO ESTÁ OU NÃO NA LISTA.
+lista = []
+continuar = 1
+while continuar == 1:
+    num = int(input('Digite um número inteiro:'))
+    if num not in lista:
+        print(f'O número {num} NÃO está na lista')
+        lista.append(num)
+    else:
+        print(f'O número {num} JÁ ESTÁ na lista')
+    continuar = int(input('Digite 1 para continuar adicionando números:'))
+print('Lista:', lista)
