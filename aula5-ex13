@@ -1,3 +1,4 @@
+#DADA UMA LISTA DE NÚMEROS, EXIBA A SUA MEDIANA.
 lista = []
 tamanho_lista = 0
 continuar = 1
