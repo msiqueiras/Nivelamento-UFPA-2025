@@ -1,0 +1,8 @@
+#CALCULE A SOMA DA SÉRIE HARMÔNICA (1 + 1⁄2 + 1⁄3 + ... + 1/N) ATÉ QUE O TERMO 1/N SEJA MENOR QUE 0.001.
+n = 1
+soma_harmonica = 1
+while 1/n >= 0.001:
+    n += 1
+    soma_harmonica += 1/n
+print('1 + 1/2 + 1/3 + ... + 1/n ~=', soma_harmonica)
+      
